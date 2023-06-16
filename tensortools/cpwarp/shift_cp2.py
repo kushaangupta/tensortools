@@ -16,7 +16,7 @@ from tensortools.cpwarp import periodic_shifts
 
 # At the moment, using parallelization tends to be slower,
 # with numba.__version__ == "0.46.0".
-USE_PARALLEL = False
+USE_PARALLEL = True
 
 
 @numba.jit(nopython=True, cache=True, parallel=USE_PARALLEL)
